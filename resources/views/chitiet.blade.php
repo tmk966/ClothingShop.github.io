@@ -27,7 +27,7 @@
 
                             <div class="available">
                                 <label for="">Số lượng:</label>
-                                <input type="number" name="soluong" min="1">
+                                <input type="number" name="soluong" min="1" value="1">
                                 <br>
                                 <h4>Size: {{$ctiet->size}}</h4>
                             </div>
