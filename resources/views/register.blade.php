@@ -16,45 +16,10 @@
             <div class="col-md-6">
                 <div class="register" id="dangki">
                     <legend><h2>Đăng kí</h2></legend>
-                    <h4 style="text-align: center" id="tb"></h4>
-                    {{--<form action="{{url('dang-ki')}}" method="post">--}}
-                    {{--{{csrf_field()}}--}}
-                    {{--<div class="col-md-6  register-top-grid">--}}
-
-                    {{--<div class="mation">--}}
-                    {{--<span>Họ Tên</span>--}}
-                    {{--<input type="text" name="name" >--}}
-
-
-                    {{--<span>Email </span>--}}
-                    {{--<input type="email" name="email" >--}}
-
-                    {{--<span>Địa chỉ</span>--}}
-                    {{--<input type="text" name="dchi">--}}
-                    {{--</div>--}}
-                    {{--<div class="clearfix"> </div>--}}
-
-                    {{--</div>--}}
-                    {{--<div class=" col-md-6 register-bottom-grid">--}}
-
-                    {{--<div class="mation">--}}
-                    {{--<span>Số điện thoại</span>--}}
-                    {{--<input type="text" name="sdt">--}}
-                    {{--<span>Password</span>--}}
-                    {{--<input type="password" name="password">--}}
-
-                    {{--</div>--}}
-                    {{--</div>--}}
-                    {{--<div class="clearfix"> </div>--}}
-                    {{--<div class="register-but">--}}
-                    {{--<input type="submit" value="Đăng kí" id="btndk">--}}
-                    {{--<div class="clearfix"> </div>--}}
-                    {{--</div>--}}
-                    {{--</form>--}}
-
-
-                    {{--<form action="{{url('dang-ki')}}" method="post" id="form-dk">--}}
-                        <div id="form-dk">
+                    <h4 style="text-align: center" id="tb">{{session('tb')}}</h4>
+                    
+                    <form action="{{url('dang-ki')}}" method="post" id="form-dk">
+                        {{--<div id="form-dk">--}}
                             {{csrf_field()}}
                             <div class="form-group">
                                 <label for="email">Họ tên:</label>
@@ -80,11 +45,11 @@
                                 <label for="pwd">Địa chỉ:</label>
                                 <input type="text" class="form-control" name="diachi" id="diachi">
                             </div>
-                            <button type="submit" class="btn btn-primary" id="btnDK">Đăng ký</button>
+                            <button type="submit" class="btn btn-primary">Đăng ký</button>
                             <button type="reset" class="btn btn-danger">Hủy bỏ</button>
-                        </div>
+                        {{--</div>--}}
 
-                    {{--</form>--}}
+                    </form>
                 </div>
             </div>
         </div>
